@@ -23,20 +23,7 @@ public class FizzBuzzTest {
         assertThat(fizzBuzz(2), is("2"));
     }
 
-    // @Refactor
-    // 1. ""+number or Integer.toString
-    // 2. Map
-    // 3. no idea
-
     private String fizzBuzz(int number) {
-        if (number == 1){
-            return "1";
-        }
-
-        if (number == 2){
-            return "2";
-        }
-
-        return null;
+        return Integer.toString(number);
     }
 }
