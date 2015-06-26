@@ -21,13 +21,17 @@ public class FizzBuzzTest {
     @Test
     public void should_return_two_for_two() {
         assertThat(fizzBuzz(2), is("2"));
-        // now what do we do?
-        // 1. Conditional 2 == 2 => "2"
-        // 2. Integer.toString(number);
-        // 3. A map translating all numbers to strings
     }
 
     private String fizzBuzz(int number) {
-        return "1";
+        if (number == 1){
+            return "1";
+        }
+
+        if (number == 2){
+            return "2";
+        }
+
+        return null;
     }
 }
