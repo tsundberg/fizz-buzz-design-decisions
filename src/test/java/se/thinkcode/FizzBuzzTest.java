@@ -29,8 +29,6 @@ public class FizzBuzzTest {
     @Test
     public void should_return_fizz_for_three() {
         assertThat(fizzBuzz(3), is("fizz"));
-        // Options
-        // 1. Add fizz to the map
     }
 
     private String fizzBuzz(int number) {
@@ -38,6 +36,7 @@ public class FizzBuzzTest {
 
         translations.put(1, "1");
         translations.put(2, "2");
+        translations.put(3, "fizz");
 
         return translations.get(number);
     }
