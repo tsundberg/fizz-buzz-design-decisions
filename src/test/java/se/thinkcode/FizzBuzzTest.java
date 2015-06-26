@@ -31,11 +31,6 @@ public class FizzBuzzTest {
         assertThat(fizzBuzz(3), is("fizz"));
     }
 
-    // @Refactor SRP in method, creation vs. usage
-    // 1. leave as is
-    // 2. create field and init in constructor
-    // 3. extract method
-
     private String fizzBuzz(int number) {
         Map<Integer, String>  translations = new HashMap<Integer, String>();
 
