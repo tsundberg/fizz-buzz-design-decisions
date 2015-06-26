@@ -26,6 +26,13 @@ public class FizzBuzzTest {
         assertThat(fizzBuzz(2), is("2"));
     }
 
+    @Test
+    public void should_return_fizz_for_three() {
+        assertThat(fizzBuzz(3), is("fizz"));
+        // Options
+        // 1. Add fizz to the map
+    }
+
     private String fizzBuzz(int number) {
         Map<Integer, String>  translations = new HashMap<Integer, String>();
 
