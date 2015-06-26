@@ -16,10 +16,15 @@ public class FizzBuzzTest {
     @Test
     public void should_return_one_for_one() {
         assertThat(fizzBuzz(1), is("1"));
+    }
+
+    @Test
+    public void should_return_two_for_two() {
+        assertThat(fizzBuzz(2), is("2"));
         // now what do we do?
-        // 1. return "1";
-        // 2. return Integer.toString(number);
-        // 3. do not see 3rd option. no real options here. maybe because first fake step.
+        // 1. Conditional 2 == 2 => "2"
+        // 2. Integer.toString(number);
+        // 3. A map translating all numbers to strings
     }
 
     private String fizzBuzz(int number) {
