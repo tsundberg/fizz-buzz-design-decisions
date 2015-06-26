@@ -23,6 +23,15 @@ public class FizzBuzzTest {
         assertThat(fizzBuzz(2), is("2"));
     }
 
+    @Test
+    public void should_return_fizz_for_three() {
+        assertThat(fizzBuzz(3), is("fizz"));
+        // Options:
+        // 1. return Conditional on three
+        // 2. return Conditional on modulo 3
+        // 3. use result with symmetric if/else and one return at end
+    }
+
     private String fizzBuzz(int number) {
         return Integer.toString(number);
     }
