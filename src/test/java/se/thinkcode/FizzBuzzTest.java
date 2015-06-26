@@ -28,6 +28,11 @@ public class FizzBuzzTest {
         assertThat(fizzBuzz(3), is("fizz"));
     }
 
+    @Test
+    public void should_return_buzz_for_five() {
+        assertThat(fizzBuzz(5), is("buzz"));
+    }
+
     private String fizzBuzz(int number) {
         if (number == 3) {
             return "fizz";
