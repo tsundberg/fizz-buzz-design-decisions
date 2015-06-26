@@ -2,6 +2,9 @@ package se.thinkcode;
 
 import org.junit.Test;
 
+import java.util.HashMap;
+import java.util.Map;
+
 import static org.hamcrest.core.Is.is;
 import static org.junit.Assert.assertThat;
 import static org.junit.Assert.assertTrue;
@@ -21,13 +24,14 @@ public class FizzBuzzTest {
     @Test
     public void should_return_two_for_two() {
         assertThat(fizzBuzz(2), is("2"));
-        // now what do we do?
-        // 1. Conditional 2 == 2 => "2"
-        // 2. Integer.toString(number);
-        // 3. A map translating all numbers to strings
     }
 
     private String fizzBuzz(int number) {
-        return "1";
+        Map<Integer, String>  translations = new HashMap<Integer, String>();
+
+        translations.put(1, "1");
+        translations.put(2, "2");
+
+        return translations.get(number);
     }
 }
