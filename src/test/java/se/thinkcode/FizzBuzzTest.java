@@ -31,6 +31,15 @@ public class FizzBuzzTest {
         assertThat(fizzBuzz(3), is("fizz"));
     }
 
+    @Test
+    public void should_return_four_for_four() {
+        assertThat(fizzBuzz(4), is("4"));
+        // Options
+        // 1. Add four to the map
+        // 2. Add all number in a loop and then replace the special number three
+        // 3. Dead end
+    }
+
     private String fizzBuzz(int number) {
         Map<Integer, String>  translations = new HashMap<Integer, String>();
 
