@@ -28,11 +28,6 @@ public class FizzBuzzTest {
         assertThat(fizzBuzz(3), is("fizz"));
     }
 
-    // Refactor duplication of fizz constant
-    // 1. ignore now
-    // 2. create constant
-    // 3. create field for class to be extracted (in constructor)
-
     private String fizzBuzz(int number) {
         if (number == 3) {
             return "fizz";
